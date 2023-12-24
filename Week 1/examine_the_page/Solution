@@ -1,1 +1,1 @@
-The id of the lemon logo is "logo1"
+The ID of the lemon logo is "logo1". But on the Coursera website, the id was "logo". They updated the id name in the file but didn't change it in their grading part.
