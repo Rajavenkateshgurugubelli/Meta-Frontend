@@ -1,6 +1,5 @@
 #photo{
-    border-width : 2px;
-    border-color: solid blue;
+    border: 2px blue solid;
 }
 h1{
     color: blue;
