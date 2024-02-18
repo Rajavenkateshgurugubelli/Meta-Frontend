@@ -15,6 +15,10 @@ function App() {
         <Pears friend="Peter" />
       </Bag>
 
+      <Bag>
+        <Apples color="yellow" number="5" />
+        <Pears friend="Peter" />
+    </Bag>
     </div>
   );
 };
