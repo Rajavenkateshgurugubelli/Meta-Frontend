@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -34,6 +34,7 @@ const socials = [
 
 const Header = () => {
   const handleClick = (anchor) => () => {
+   
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
     if (element) {
@@ -58,6 +59,7 @@ const Header = () => {
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
+          
           px={16}
           py={4}
           justifyContent="space-between"
@@ -68,14 +70,15 @@ const Header = () => {
             socials.map((social) =>(
               <a  href={social.url} ><FontAwesomeIcon icon={social.icon} size="2x" /> </a>
             ))}
+
           </nav>
           <nav>
             <HStack spacing={8}>
-              /* Add links to Projects and Contact me section */
-              <a href="/#projects" onClick={handleClick("projects")} id="projects-section">
+              {/* Add links to Projects and Contact me section */}
+              <a href="/#projects" onClick={handleClick("projects")} >
                 Projects
               </a>
-              <a href="/#contact-me" onClick={handleClick("contactme")} id="contactme-section">
+              <a href="/#contact-me" onClick={handleClick("contactme")} >
                 Contact Me
               </a>
             </HStack>

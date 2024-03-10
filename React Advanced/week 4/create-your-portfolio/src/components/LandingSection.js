@@ -16,10 +16,10 @@ const LandingSection = () => (
     backgroundColor="#2A4365"
   >
     <VStack>
-      <img src="https://i.pravatar.cc/150?img=7"></img>
-      <h1>{greeting}</h1>
-      <h2>{bio1}</h2>
-      <h2>{bio2}</h2>
+      <Avatar src="https://media.licdn.com/dms/image/D5603AQG_utKB1UXYrw/profile-displayphoto-shrink_800_800/0/1707342711585?e=2147483647&v=beta&t=k0cCA_rSVI7vQBK7GX3plkweqrOAGr27OQY4tgKNe8Y" size="xxl" ></Avatar>
+      <>{greeting}</>
+      <Heading>{bio1}</Heading>
+      <Heading>{bio2}</Heading>
       
     </VStack>
 
