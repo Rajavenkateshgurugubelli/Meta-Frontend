@@ -36,12 +36,13 @@ const ContactMeSection = () => {
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
-        const response = await submit(null, values); // Pass null as the first argument
-        if (response.type === 'success') {
-          onOpen('success', `Form submitted successfully. Hello, ${values.firstName}!`);
+         await submit('contact-me', values);
+         const status=response;
+        if (status.type === 'success') {
+          onOpen(status.type, status.message);
           resetForm();
         } else {
-          onOpen('error', response.message);
+          onOpen(status.type, status.message);
         }
       } catch (error) {
         console.error("Error submitting form:", error);
