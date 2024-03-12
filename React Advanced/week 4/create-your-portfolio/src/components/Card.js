@@ -10,17 +10,17 @@ const Card = ({ title, description, imageSrc }) => {
   
 
   return (
-      <VStack bgColor={"white"} >
+      <VStack bgColor={'#0e0738'} >
         <Image src={imageSrc} alt={title} borderRadius="lg" />
         <VStack spacing="2" align="start" p="4">
-          <Heading size="md" color={"black"}>{title}</Heading>
-          <Text color={"black"}>{description}</Text>
+          <Heading size="md" >{title}</Heading>
+          <Text >{description}</Text>
         </VStack>
         <HStack p="4" spacing="2"  align="center" > 
-          <Text  fontSize="lg" fontWeight="bold" color={"black"}>
+          <Text  fontSize="lg" fontWeight="bold" >
             See more
           </Text>
-          <FontAwesomeIcon icon={faArrowRight} color={"black"} />
+          <FontAwesomeIcon icon={faArrowRight}  />
         </HStack>
       </VStack>
   );
